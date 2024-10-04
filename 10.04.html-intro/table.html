@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML table</title>
+    <style>
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid teal;
+      }
+      td,
+      th {
+        padding: 5px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Studets Table</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th colspan="2">Full Name</th>
+          <th>University</th>
+          <th>Faculty</th>
+          <th>GPA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Zubeyda</td>
+          <td>Alizada</td>
+          <td rowspan="2">BDU</td>
+          <td>Ecology</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Huseyn</td>
+          <td>İbrahimli</td>
+          <!-- <td>BDU</td> -->
+          <td>Computer Science</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Aslan</td>
+          <td>Jafarov</td>
+          <td>Harvard</td>
+          <td>Computer Science</td>
+          <td>51</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Awerage GPA:</th>
+          <th colspan="5">95</th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
