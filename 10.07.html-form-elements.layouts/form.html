@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html form elements</title>
+  </head>
+  <body>
+    <h2>Student Form</h2>
+
+    <form id=" l">
+      <input
+        type="text"
+        placeholder="Student Name"
+        required
+        minlength="3"
+        maxlength="15"
+        name="studentName"
+      />
+
+      <br />
+      <label for="university">Enter your university</label>
+      <input type="text" name="university" id="university" />
+
+      <br />
+      <input type="number" name="age" placeholder="Age" min="18" max="65" />
+      <br />
+      <input type="email" placeholder="email" required />
+      <br />
+      <input type="password" placeholder="password" />
+      <br />
+      <label for="color">Select fav color</label>
+      <input type="color" name="" id="color" />
+      <br />
+
+      <!-- <input type="date" /> -->
+      <!-- <input type="datetime-local" /> -->
+      <input type="datetime-local" />
+      <br />
+      <label for="gpa">Select gpa range..</label>
+      <input type="range" min="0" max="100" step="10" />
+      <br />
+      <label for="avatar">Upload ur avatar</label>
+      <input type="file" accept="image/png" />
+      <br />
+      <input type="url" placeholder="enter ur linkedin profile url.." />
+      <br />
+      <!-- <input type="search" placeholder="search..." /> -->
+      <br />
+
+      <!-- checkbox vs radio -->
+
+      <label for="">Select Gender:</label>
+
+      <input type="radio" id="male" name="gender" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" checked />
+      <label for="female">Female</label>
+      <br />
+      <label for="">Select your skills:</label>
+      <br />
+      <input type="checkbox" id="html" checked />
+      <label for="html">HTML</label>
+      <br />
+      <input type="checkbox" id="css" />
+      <label for="css">CSS</label>
+
+      <br />
+      <input type="checkbox" id="js" />
+      <label for="js">JS</label>
+      <br />
+
+      <label for="city">Select ur city?</label>
+      <select name="city" id="city">
+        <option value="baku">Baku</option>
+        <option value="london">London</option>
+        <option value="moscow">Moscow</option>
+      </select>
+
+      <br />
+      <br />
+      <!-- <select name="lang" id="">
+        <option value="" disabled selected>Select your language..</option>
+        <option value="az">Azerbaijan</option>
+        <option value="en">English</option>
+        <option value="ru">Russian</option>
+      </select> -->
+
+      <select name="lang" id="">
+        <option value="" disabled selected hidden>
+          Select your language..
+        </option>
+        <option value="az">Azerbaijan</option>
+        <option value="en">English</option>
+        <option value="ru">Russian</option>
+      </select>
+
+      <br />
+
+      <br />
+      <textarea
+        name="suggestions"
+        id=""
+        placeholder="Enter ur suggestions here.."
+        rows="10"
+        cols="50"
+      ></textarea>
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Clear" />
+      <!-- <button type="submit">Submit</button> -->
+      <!-- <button type="Reset">Clear</button> -->
+    </form>
+
+    <br />
+    <input
+      type="tel"
+      placeholder="enter ur phone number.."
+      required
+      form="student-form"
+    />
+
+    <button disabled>Help</button>
+  </body>
+</html>
