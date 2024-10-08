@@ -1,0 +1,29 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.list {
+  background-color: #dc6e6e;
+}
+
+p {
+  color: blue;
+}
+
+.container .card {
+  border: 1px solid red;
+}
+
+#card-title {
+  color: green;
+}
+.card-title {
+  color: purple;
+}
+h3 {
+  color: tomato !important;
+}
+
+/* !important, inline css, id, class, element, user agent */
