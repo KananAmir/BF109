@@ -1,0 +1,25 @@
+body {
+  height: 200vh;
+}
+#about {
+  height: 100vh;
+  background-color: #d35858;
+}
+#contact {
+  height: 100vh;
+  background-color: #58d381;
+}
+.container {
+  width: 80vw;
+  height: 70vh;
+  background-color: olive;
+  margin: 100px auto;
+  border: 5px solid;
+
+  background-image: url("https://img.goodfon.com/wallpaper/big/5/66/nature-road-roads-tree.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  background-attachment: fixed;
+}
