@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+article {
+  padding: 20px 40px;
+}
+
+.title {
+  margin: 20px 0;
+  /* direction: rtl;
+  unicode-bidi: bidi-override; */
+  /* text-transform: uppercase; */
+  /* text-transform: lowercase; */
+  text-transform: capitalize;
+  text-align: center;
+
+  font-size: 3rem;
+
+  color: blue;
+  text-shadow: 0px 11px 5px red;
+}
+.blog-title {
+  text-align: center;
+  color: orange;
+
+  /* text-decoration-line: underline; */
+  /* text-decoration-color: blueviolet;
+  text-decoration-thickness: 2px;
+  text-decoration-style: wavy; */
+  /* text-decoration: underline red solid 5px; */
+
+  text-decoration: underline;
+}
+
+.blog-content {
+  /* text-align: left; */
+  /* text-align: justify; */
+  text-align-last: justify;
+  text-indent: 2rem;
+  letter-spacing: 4px;
+  line-height: 2;
+  word-spacing: 10px;
+  /* white-space: pre; */
+}
+
+.card {
+  width: 300px;
+  border: 2px solid orange;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  /* display: inline-block; */
+  margin: 0 20px;
+  margin: 100px auto;
+
+  /* box-shadow: 0px 8px 20px 7px red; */
+  /* box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px,
+    rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px,
+    rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px,
+    rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px,
+    rgb(255, 85, 85) 40px -40px; */
+
+  box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px,
+    rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px,
+    rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+
+.avatar-container {
+  background-color: red;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+
+  background-image: url("https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1728345600&semt=ais_hybrid");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
