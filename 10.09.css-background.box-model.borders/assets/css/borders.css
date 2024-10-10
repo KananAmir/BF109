@@ -41,12 +41,19 @@
   border-radius: 50%;
 }
 
+.cards {
+  display: flex;
+  justify-content: center;
+  /* gap: 20px; */
+}
 .cards .card {
   width: 300px;
   border: 2px solid orange;
   padding: 16px;
   border-radius: 8px;
   text-align: center;
+  /* display: inline-block; */
+  margin: 0 20px;
 }
 
 .cards .avatar-container {
