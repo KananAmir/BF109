@@ -1,0 +1,54 @@
+/* px, rem, em, vw, vh, % */
+
+/* vw - viewport width */
+/* vh - viewport height */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.heading {
+  font-size: 64px;
+}
+
+.parag {
+  font-size: 2rem;
+}
+
+.parag strong {
+  font-size: 1.5em;
+}
+
+.info {
+  font-size: 3rem;
+}
+
+/* .wrapper {
+  width: 30vw;
+  height: 40rem;
+
+  background-color: orange;
+}
+
+.box {
+  background-color: red;
+  width: 40vw;
+  height: 300px;
+} */
+
+.wrapper {
+  background-color: orange;
+  width: 50vw;
+  height: 30vh;
+}
+
+.box {
+  background-color: red;
+  width: 40%;
+  /* height: 10vh; */
+  height: 20%;
+}
