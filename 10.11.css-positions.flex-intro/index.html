@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fontawesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>CSS Positions</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header">
+          <nav>
+            <ul>
+              <li>
+                <a href="#">home</a>
+              </li>
+              <li>
+                <a href="#">about</a>
+              </li>
+              <li>
+                <a href="#">contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="banner">
+        <div class="outer-box">
+          <div class="wrapper">
+            <div class="box">1</div>
+            <div class="box-2">2</div>
+            <div class="box-3">2</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" style="position: relative">
+        <div class="info">
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="">
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="">
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+      </section>
+      <section id="team"></section>
+      <section id="contact"></section>
+    </main>
+
+    <hr />
+    <div class="input-wrapper">
+      <input type="text" placeholder="search here.." class="search" />
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+/* static, relative, absoute, fixed, sticky */
+
+/* static - default value */
+/* relative - elementin olduğu yerdən pozisiyasını dəyişmək üçün */
+/* absoulte - parent'inin daxilində pozisiyasını müəyyən etmək üçün (parentində relative, absolute, fixed dəyərlərindən biri olmalıdır) */
+/* fixed - window'a sabitləmək üçün */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+
+body {
+  height: 200vh;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 2px solid;
+  /* background-color: rgba(255, 0, 0, 0.3); */
+  background-color: green;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+.header nav ul {
+  display: flex;
+  gap: 2rem;
+}
+.header nav ul li a {
+  color: orange;
+  font-size: 1.5rem;
+}
+
+#banner {
+  margin-top: 80px;
+  padding: 3rem 0;
+}
+
+#about {
+  background-color: teal;
+  height: 100vh;
+}
+.info {
+  border: 2px solid red;
+  padding: 10px;
+  width: 300px;
+  background-color: yellow;
+  position: sticky;
+  left: 50%;
+  top: 80%;
+}
+#contact {
+  background-color: pink;
+  height: 100vh;
+}
+#team {
+  height: 40px;
+  background-color: black;
+  position: sticky;
+  top: 80px;
+}
+.outer-box {
+  width: 1000px;
+  height: 70vh;
+  border: 3px solid red;
+  margin: 0 auto;
+  position: relative;
+}
+.wrapper {
+  width: 500px;
+  height: 300px;
+  border: 3px solid;
+  margin: 0 auto;
+  /* position: relative; */
+  position: absolute;
+  /* top: calc(50%-500px); */
+  left: calc(50% - 250px);
+  top: calc(50% - 150px);
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  /* position: relative; */
+  /* top: -30px; */
+  /* left: 30px; */
+  /* right: 30px; */
+
+  position: absolute;
+  /* right: 0;
+  bottom: 0; */
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+  z-index: 1;
+}
+
+.box-2 {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+}
+.box-3 {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  position: absolute;
+
+  left: 55%;
+  top: 55%;
+  z-index: 3;
+}
+
+/* .search {
+  width: 250px;
+  height: 40px;
+  margin: 2rem 0 2rem 2rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
+}
+.fa-solid.fa-magnifying-glass {
+  color: purple;
+  position: relative;
+  right: 1.8rem;
+} */
+
+.input-wrapper {
+  position: relative;
+  margin: 20px;
+  /* display: inline-block; */
+  width: 250px;
+}
+.input-wrapper .search {
+  /* width: 250px; */
+  height: 40px;
+  padding: 0 2rem 0 1rem;
+  width: 100%;
+}
+
+.fa-solid.fa-magnifying-glass {
+  color: purple;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 1.5rem;
+}
