@@ -211,7 +211,9 @@ footer .footer-bottom p {
   .footer .footer-right ul {
     align-items: center;
   }
-  footer .footer .footer-left .checkbox-wrapper {
+  footer .footer .footer-left .checkbox-wrapper,
+  footer .footer .input-wrapper {
     text-align: center;
+    margin: 0 auto;
   }
 }
