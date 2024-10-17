@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main right right"
+    "menu footer footer footer footer footer";
+}
+.header {
+  grid-area: header;
+}
+.menu {
+  grid-area: menu;
+}
+.main {
+  grid-area: main;
+}
+.right {
+  grid-area: right;
+}
+.footer {
+  grid-area: footer;
+}
+
+.container > div {
+  background-color: cyan;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "item-1 item2 item-5 item-5"
+    "item-3 item-3 item-5 item-5"
+    "item-3 item-3 item-5 item-5"
+    "item-4 item-4 item-six item-six"
+    "item-4 item-4 item-six item-six";
+}
+
+.item-1 {
+  grid-area: item-1;
+}
+
+.item2 {
+  grid-area: item2;
+}
+
+.item-3 {
+  grid-area: item-3;
+}
+
+.item-4 {
+  grid-area: item-4;
+}
+
+.item-5 {
+  grid-area: item-5;
+}
+
+.item-six {
+  grid-area: item-six;
+}
+
+.container2 > div {
+  background-color: olivedrab;
+  padding: 2rem;
+}
