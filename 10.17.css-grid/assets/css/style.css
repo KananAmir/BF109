@@ -74,3 +74,31 @@
 .grid-container2 .item-1 {
   order: 1;
 }
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.grid-wrapper > div {
+  background-color: orange;
+  padding: 1rem 0;
+}
+.grid-wrapper .box-1 {
+  grid-column: span 12;
+}
+.grid-wrapper .box-2 {
+  grid-column: span 6;
+}
+.grid-wrapper .box-3 {
+  grid-column: span 4;
+}
+.grid-wrapper .box-4 {
+  grid-column: span 3;
+}
+.grid-wrapper .box-5 {
+  grid-column: span 2;
+}
