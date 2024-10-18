@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 50%;
+  height: 50vh;
+  border: 4px solid;
+  margin: 100px auto;
+  position: relative;
+}
+
+.wrapper .box {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* animation-name: move; */
+
+  animation-name: move2;
+  animation-duration: 4s;
+
+  /* animation-delay: 1s; */
+
+  animation-timing-function: ease;
+  /* animation-direction: normal; */
+  /* animation-direction: alternate; */
+  /* animation-direction: alternate-reverse; */
+  /* animation-iteration-count: 3; */
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  /* animation-fill-mode: backwards; */
+  /* border-radius: 50%; */
+}
+
+.wrapper:hover .box {
+  animation-play-state: paused;
+}
+
+@keyframes move {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes move2 {
+  0% {
+    left: 50%;
+    top: 50%;
+  }
+  25% {
+    top: 0;
+    left: 100%;
+    transform: translate(-100%, 0) rotate(45deg);
+    background-color: orange;
+  }
+  50% {
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%) rotate(90deg);
+    background-color: teal;
+  }
+  75% {
+    top: 100%;
+    left: 0;
+    transform: translate(0, -100%) rotate(180deg);
+    background-color: red;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0) rotate(360deg);
+    background-color: blueviolet;
+  }
+}
+
+.container {
+  width: 500px;
+  height: 300px;
+  border: 3px solid;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .fa-heart {
+  font-size: 5rem;
+  color: red;
+  animation: heartBeat 2s linear 0s infinite forwards alternate;
+  /* animation: name duration timing-function delay iteration-count direction
+    fill-mode; */
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(2);
+  }
+  50% {
+    transform: scale(2.5);
+  }
+  75% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cd-player {
+  width: 500px;
+  height: 500px;
+  margin: 200px auto;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  animation: cd-player 3s linear 0s infinite;
+}
+.cd-player::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.cd-player img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes cd-player {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
