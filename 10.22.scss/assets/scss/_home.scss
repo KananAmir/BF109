@@ -1,0 +1,13 @@
+#home {
+  #banner {
+    .banner {
+      .banner-content {
+        font-size: 2rem;
+        color: orange;
+        &.text-red {
+          color: red;
+        }
+      }
+    }
+  }
+}
