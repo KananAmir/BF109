@@ -1,0 +1,29 @@
+%primary-btn {
+  color: $color-white;
+  background-color: transparent;
+  font-size: 14px;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  border: 1px solid #4f5061;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.6s;
+  cursor: pointer;
+}
+%secondary-btn {
+  color: $color-white;
+  background-color: $secondary-color;
+  font-size: 14px;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  border: 1px solid #4f5061;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.6s;
+  cursor: pointer;
+  &:hover {
+    background-color: transparent;
+    color: $secondary-color;
+    border: 1px solid $secondary-color;
+  }
+}
